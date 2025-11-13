@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>America — Travel Destinations</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!--
+This page includes a responsive gallery (Stretch Challenge #1)
+and uses <details> for hidden information (new semantic tag).
+-->
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+<header class="bg-blue-700 text-white">
+<nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
+<h1 class="text-2xl font-bold">Travel Destinations</h1>
+<div class="flex gap-4">
+<a href="index.html" class="hover:underline">Home</a>
+<a href="asia.html" class="hover:underline">Asia</a>
+<a href="europe.html" class="hover:underline">Europe</a>
+<a href="america.html" class="underline" aria-current="page">America</a>
+<a href="contact.html" class="hover:underline">Contact</a>
+</div>
+</nav>
+</header>
+
+<main class="flex-1 max-w-6xl mx-auto p-6">
+<h2 class="text-3xl font-bold mb-4">Explore the Americas</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500" alt="New York City skyline" class="rounded-lg shadow-lg" />
+<img src="https://images.unsplash.com/photo-1561484930-3f6a481cf96d?w=500" alt="Machu Picchu in Peru" class="rounded-lg shadow-lg" />
+<img src="https://images.unsplash.com/photo-1503437313881-503a91226402?w=500" alt="Rio de Janeiro beach" class="rounded-lg shadow-lg" />
+</div>
+
+<details class="mt-6 bg-blue-100 dark:bg-blue-800 p-4 rounded-lg">
+<summary class="font-semibold cursor-pointer">Click to read travel advice</summary>
+<p>Book flights early and consider local transportation options like buses and ride-shares for affordability.</p>
+</details>
+</main>
+
+<footer class="bg-blue-700 text-white p-4 text-center">
+<p>Adventure across the Americas</p>
+<p>Last updated: <time datetime="2025-11-12">November 12, 2025</time></p>
+</footer>
+</body>
+</html>
