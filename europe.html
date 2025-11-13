@@ -1,0 +1,54 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Europe — Travel Destinations</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!--
+This page uses <aside> for cultural facts and a flex layout.
+Shows responsive breakpoints with Tailwind utilities.
+-->
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+<header class="bg-blue-700 text-white">
+<nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
+<h1 class="text-2xl font-bold">Travel Destinations</h1>
+<div class="flex gap-4">
+<a href="index.html" class="hover:underline">Home</a>
+<a href="asia.html" class="hover:underline">Asia</a>
+<a href="europe.html" class="underline" aria-current="page">Europe</a>
+<a href="america.html" class="hover:underline">America</a>
+<a href="contact.html" class="hover:underline">Contact</a>
+</div>
+</nav>
+</header>
+
+<main class="flex-1 max-w-6xl mx-auto p-6">
+<div class="flex flex-col md:flex-row gap-6">
+<div class="md:w-2/3">
+<h2 class="text-3xl font-bold mb-4">Iconic Cities of Europe</h2>
+<p>Europe combines art, architecture, and culinary excellence in ways unmatched anywhere else.</p>
+<ul class="list-disc pl-6 mt-4">
+<li>Paris, France — The City of Light.</li>
+<li>Rome, Italy — Home to ancient history.</li>
+<li>Barcelona, Spain — Modernist architecture and beaches.</li>
+</ul>
+</div>
+
+<aside class="md:w-1/3 bg-blue-100 dark:bg-blue-800 p-4 rounded-lg">
+<h3 class="font-semibold mb-2">Travel Tip</h3>
+<p>Use trains to explore multiple countries easily. The Eurail Pass is popular with travelers!</p>
+</aside>
+</div>
+</main>
+
+<footer class="bg-blue-700 text-white p-4 text-center">
+<p>European highlights await!</p>
+<p>Last updated: <time datetime="2025-11-12">November 12, 2025</time></p>
+</footer>
+</body>
+</html>
