@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asia — Travel Destinations</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!--
+This page explores Asia with a grid layout and cultural facts.
+New semantic tag: <figure> with <figcaption>.
+-->
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+<header class="bg-blue-700 text-white">
+<nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
+<h1 class="text-2xl font-bold">Travel Destinations</h1>
+<div class="flex gap-4">
+<a href="index.html" class="hover:underline">Home</a>
+<a href="asia.html" class="underline" aria-current="page">Asia</a>
+<a href="europe.html" class="hover:underline">Europe</a>
+<a href="america.html" class="hover:underline">America</a>
+<a href="contact.html" class="hover:underline">Contact</a>
+</div>
+</nav>
+</header>
+
+<main class="flex-1 max-w-6xl mx-auto p-6">
+<h2 class="text-3xl font-bold mb-6">Top Destinations in Asia</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+<figure class="shadow-lg rounded-lg overflow-hidden">
+<img src="https://images.unsplash.com/photo-1551763673-0c3f4f6a8d8a?w=600" alt="Tokyo skyline at night" class="w-full h-48 object-cover" />
+<figcaption class="p-3 text-center font-semibold">Tokyo, Japan</figcaption>
+</figure>
+
+<figure class="shadow-lg rounded-lg overflow-hidden">
+<img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600" alt="Great Wall of China" class="w-full h-48 object-cover" />
+<figcaption class="p-3 text-center font-semibold">Beijing, China</figcaption>
+</figure>
+
+<figure class="shadow-lg rounded-lg overflow-hidden">
+<img src="https://images.unsplash.com/photo-1578894381163-90e3a6cc7b79?w=600" alt="Thai temples" class="w-full h-48 object-cover" />
+<figcaption class="p-3 text-center font-semibold">Bangkok, Thailand</figcaption>
+</figure>
+</div>
+</main>
+
+<footer class="bg-blue-700 text-white p-4 text-center">
+<p>Explore Asia’s culture & food</p>
+<p>Last updated: <time datetime="2025-11-12">November 12, 2025</time></p>
+</footer>
+</body>
+</html>
