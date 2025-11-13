@@ -1,69 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Destinations - Home</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Travel Destinations Hub</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<!--
+This page introduces the overall theme — Travel Destinations —
+and sets up the shared navigation used on all pages.
+New semantic tag used: <mark> for highlighting.
+-->
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+<header class="bg-blue-700 text-white">
+<nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
+<h1 class="text-2xl font-bold">Travel Destinations</h1>
+<div class="flex gap-4">
+<a href="index.html" class="underline" aria-current="page">Home</a>
+<a href="asia.html" class="hover:underline">Asia</a>
+<a href="europe.html" class="hover:underline">Europe</a>
+<a href="america.html" class="hover:underline">America</a>
+<a href="contact.html" class="hover:underline">Contact</a>
+<button id="toggleDark" class="bg-white text-blue-700 px-2 py-1 rounded-md">🌙</button>
+</div>
+</nav>
+</header>
 
-  <!-- Header with navigation -->
-  <header class="bg-blue-600 text-white p-4">
-    <nav class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Travel Destinations</h1>
-      <ul class="flex space-x-4">
-        <li><a href="index.html" class="underline font-semibold">Home</a></li>
-        <li><a href="europe.html" class="hover:underline">Europe</a></li>
-        <li><a href="asia.html" class="hover:underline">Asia</a></li>
-        <li><a href="americas.html" class="hover:underline">Americas</a></li>
-        <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
+<main class="flex-1 max-w-6xl mx-auto p-6 text-center">
+<h2 class="text-3xl font-bold mb-4">Welcome to the <mark>World Explorer</mark>!</h2>
+<p class="text-lg mb-6">
+Explore famous destinations across the globe. Learn about culture, attractions, and landmarks from every continent.
+</p>
 
-  <!-- Main content -->
-  <main class="container mx-auto p-4">
-    <!-- Welcome section -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-bold mb-2">Welcome to My Travel Site!</h2>
-      <p>Explore some of the most amazing destinations around the world. From Europe to Asia to the Americas, we’ll show you where to go and what to see.</p>
-    </section>
+<img
+src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200"
+alt="Beautiful tropical beach with clear water and palm trees"
+class="rounded-lg shadow-lg mx-auto w-full md:w-2/3"
+/>
+</main>
 
-    <!-- Aside for travel tip -->
-    <aside class="bg-blue-100 p-4 rounded mb-6">
-      <!-- Using <aside> as a new semantic element to highlight travel tips -->
-      <h3 class="font-semibold mb-2">Travel Tip:</h3>
-      <p>Always check the local weather and best seasons to visit each destination!</p>
-    </aside>
+<footer class="bg-blue-700 text-white p-4 text-center">
+<p>Follow us @TravelHub | Email: info@travelhub.com</p>
+<p>Last updated: <time datetime="2025-11-12">November 12, 2025</time></p>
+</footer>
 
-    <!-- Example featured section using Tailwind flex -->
-    <section class="flex flex-col md:flex-row gap-4">
-      <div class="flex-1 bg-white p-4 rounded shadow">
-        <h3 class="font-semibold mb-2">Europe Highlights</h3>
-        <p>Discover the historic cities, beautiful coastlines, and rich culture of Europe.</p>
-      </div>
-      <div class="flex-1 bg-white p-4 rounded shadow">
-        <h3 class="font-semibold mb-2">Asia Highlights</h3>
-        <p>From bustling cities to serene landscapes, Asia offers a variety of unforgettable experiences.</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-blue-600 text-white p-4 mt-6">
-    <div class="container mx-auto flex justify-between items-center">
-      <p>Contact: travel@example.com</p>
-      <p>Last updated: <time datetime="2025-11-13">November 13, 2025</time></p>
-    </div>
-  </footer>
-
-  <!-- Notes on design choices:
-       - Used Tailwind utility classes for spacing, colors, and layout
-       - Flex layout demonstrates responsive behavior (stacked on mobile, row on md+)
-       - Aside element highlights travel tips and is semantic
-       - Footer includes <time> for accessibility and last updated info
-  -->
+<script>
+// Bonus feature: Dark mode toggle
+const toggle = document.getElementById("toggleDark");
+toggle.addEventListener("click", () => {
+document.documentElement.classList.toggle("dark");
+});
+</script>
 </body>
 </html>
+
