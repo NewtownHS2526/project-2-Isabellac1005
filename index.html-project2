@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Destinations | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    
+    function toggleDark() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 flex flex-col min-h-screen">
+  
+  <header class="bg-blue-600 dark:bg-blue-800 text-white p-4">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto">
+      <h1 class="text-xl font-bold">🌍 Travel Destinations</h1>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="underline font-semibold">Home</a></li>
+        <li><a href="paris.html" class="hover:underline">Paris</a></li>
+        <li><a href="tokyo.html" class="hover:underline">Tokyo</a></li>
+        <li><a href="newyork.html" class="hover:underline">New York</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+      </ul>
+      <button onclick="toggleDark()" class="bg-white text-blue-600 px-2 py-1 rounded text-sm dark:bg-gray-700 dark:text-gray-200">Toggle 🌙</button>
+    </nav>
+  </header>
+
+  <main class="flex-1 max-w-6xl mx-auto p-6">
+    <section class="text-center mb-10">
+      <h2 class="text-3xl font-bold mb-2">Explore the World</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300">Discover the most amazing places across the globe.</p>
+    </section>
+
+  
+    <section class="grid md:grid-cols-3 gap-6">
+      <figure class="rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?paris" alt="Eiffel Tower in Paris" class="w-full h-60 object-cover" />
+        <figcaption class="p-2 font-semibold">Paris, France</figcaption>
+      </figure>
+      <figure class="rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo city skyline" class="w-full h-60 object-cover" />
+        <figcaption class="p-2 font-semibold">Tokyo, Japan</figcaption>
+      </figure>
+      <figure class="rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?newyork" alt="New York skyline" class="w-full h-60 object-cover" />
+        <figcaption class="p-2 font-semibold">New York, USA</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="bg-blue-600 dark:bg-blue-800 text-white text-center py-4 mt-6">
+    <p>Contact us: travel@worldexplore.com | Follow us @worldexplore</p>
+    <p>Last updated: <time datetime="2025-11-13">Nov 13, 2025</time></p>
+  </footer>
+</body>
+</html>
