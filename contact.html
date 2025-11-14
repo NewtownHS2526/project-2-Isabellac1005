@@ -1,0 +1,72 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Travel Destinations</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!--
+This page includes a simple validated contact form (Stretch Challenge #2)
+and uses <dialog> (new semantic tag) for a pop-up message.
+-->
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen">
+<header class="bg-blue-700 text-white">
+<nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
+<h1 class="text-2xl font-bold">Travel Destinations</h1>
+<div class="flex gap-4">
+<a href="index.html" class="hover:underline">Home</a>
+<a href="asia.html" class="hover:underline">Asia</a>
+<a href="europe.html" class="hover:underline">Europe</a>
+<a href="america.html" class="hover:underline">America</a>
+<a href="contact.html" class="underline" aria-current="page">Contact</a>
+</div>
+</nav>
+</header>
+
+<main class="flex-1 max-w-lg mx-auto p-6">
+<h2 class="text-3xl font-bold mb-4 text-center">Contact Us</h2>
+
+<form class="space-y-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" onsubmit="showDialog(event)">
+<div>
+<label for="name" class="block font-semibold">Name</label>
+<input id="name" name="name" type="text" required class="w-full border rounded p-2 mt-1" />
+</div>
+<div>
+<label for="email" class="block font-semibold">Email</label>
+<input id="email" name="email" type="email" required class="w-full border rounded p-2 mt-1" />
+</div>
+<div>
+<label for="message" class="block font-semibold">Message</label>
+<textarea id="message" name="message" required class="w-full border rounded p-2 mt-1"></textarea>
+</div>
+<button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded">Send</button>
+</form>
+
+<dialog id="thankYou" class="p-6 rounded-md bg-blue-100 dark:bg-blue-800 text-center">
+<p class="text-lg font-semibold">Thank you! We’ll reply soon.</p>
+<button onclick="closeDialog()" class="mt-4 px-4 py-2 bg-blue-700 text-white rounded">Close</button>
+</dialog>
+</main>
+
+<footer class="bg-blue-700 text-white p-4 text-center">
+<p>Contact Travel Hub</p>
+<p>Last updated: <time datetime="2025-11-12">November 12, 2025</time></p>
+</footer>
+
+<script>
+// Contact form dialog
+const dialog = document.getElementById("thankYou");
+function showDialog(e) {
+e.preventDefault();
+dialog.showModal();
+}
+function closeDialog() {
+dialog.close();
+}
+</script>
+</body>
+</html>
